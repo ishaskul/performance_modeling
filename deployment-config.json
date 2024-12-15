@@ -1,0 +1,417 @@
+{
+    "gl2": {
+      "account-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 1.5,
+        "steady_arrival_rate": 0.57,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 8,
+        "time_step": 1,
+        "jobs":{
+          "oauth_token":{
+            "avg_service_time":"0.1069",
+            "api_call_count":"1"
+          },
+          "user_getUserInfo":{
+            "avg_service_time":"0.0086",
+            "api_call_count":"1"
+          }
+        }
+      },
+      "billing-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 0.1,
+        "steady_arrival_rate": 0.47,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 8,
+        "time_step": 1,
+        "jobs":{
+          "address_getAddress":{
+            "avg_service_time":"0.0131",
+            "api_call_count":"2"
+          },
+          "address_createAddress":{
+            "avg_service_time":"0.0377",
+            "api_call_count":"1"
+          }
+        }
+      },
+      "catalog-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 2.3,
+        "steady_arrival_rate": 0.79,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 8,
+        "time_step": 1,
+        "jobs":{
+          "product_getAll":{
+            "avg_service_time":"0.0396",
+            "api_call_count":"2"
+          },
+          "image_get":{
+            "avg_service_time":"0.0005",
+            "api_call_count":"7"
+          },
+          "product_get":{
+            "avg_service_time":"0.0168",
+            "api_call_count":"4"
+          },
+          "review_getAllForProduct":{
+            "avg_service_time":"0.0034",
+            "api_call_count":"4"
+          }
+        }
+      },
+      "payment-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 0.3,
+        "steady_arrival_rate": 0.87,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 8,
+        "time_step": 1,
+        "jobs":{
+          "payment_getAll":{
+            "avg_service_time":"0.1224",
+            "api_call_count":"2"
+          },
+          "payment_create":{
+            "avg_service_time":"1.6019",
+            "api_call_count":"1"
+          }
+      }
+      },
+      "order-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 2.1,
+        "steady_arrival_rate": 0.57,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 8,
+        "time_step": 1,
+        "jobs":{
+          "cartItem_add":{
+            "avg_service_time":"0.1064",
+            "api_call_count":"4"
+          },
+          "order_create":{
+            "avg_service_time":"1.4065",
+            "api_call_count":"1"
+          },
+          "order_getById":{
+            "avg_service_time":"0.3025",
+            "api_call_count":"1"
+          },
+          "order_previewOrder":{
+            "avg_service_time":"0.3772",
+            "api_call_count":"1"
+          },
+          "cart_get":{
+            "avg_service_time":"0.0352",
+            "api_call_count":"1"
+          }
+      }
+      },
+      "gateway-server_replica_1": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 2.1,
+        "steady_arrival_rate": 0.57,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 8,
+        "time_step": 1
+      },
+      "gateway-server_replica_2": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 2.1,
+        "steady_arrival_rate": 0.57,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 8,
+        "time_step": 1
+      },
+      "gateway-server_replica_3": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 2.1,
+        "steady_arrival_rate": 0.57,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 8,
+        "time_step": 1
+      }
+    },
+    "gl5": {
+      "account-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 2.1,
+        "steady_arrival_rate": 0.57,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 32,
+        "time_step": 1,
+        "jobs":{
+          "oauth_token":{
+            "avg_service_time":"0.1069",
+            "api_call_count":"1"
+          },
+          "user_getUserInfo":{
+            "avg_service_time":"0.0086",
+            "api_call_count":"1"
+          }
+        }
+      },
+      "billing-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 0.1,
+        "steady_arrival_rate": 0.57,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 32,
+        "time_step": 1,
+        "jobs":{
+          "address_getAddress":{
+            "avg_service_time":"0.013",
+            "api_call_count":"2"
+          },
+          "address_createAddress":{
+            "avg_service_time":"0.0376",
+            "api_call_count":"1"
+          }
+        }
+      },
+      "catalog-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 2.1,
+        "steady_arrival_rate": 0.57,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 32,
+        "time_step": 1,
+        "jobs":{
+          "product_getAll":{
+            "avg_service_time":"0.0182",
+            "api_call_count":"2"
+          },
+          "image_get":{
+            "avg_service_time":"0.0006",
+            "api_call_count":"7"
+          },
+          "product_get":{
+            "avg_service_time":"0.0063",
+            "api_call_count":"4"
+          },
+          "review_getAllForProduct":{
+            "avg_service_time":"0.0016",
+            "api_call_count":"4"
+          }
+        }
+      },
+      "payment-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 0.2,
+        "steady_arrival_rate": 0.57,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 32,
+        "time_step": 1,
+        "jobs":{
+          "payment_getAll":{
+            "avg_service_time":"0.0921",
+            "api_call_count":"2"
+          },
+          "payment_create":{
+            "avg_service_time":"1.4718",
+            "api_call_count":"1"
+          }
+      }
+      },
+      "order-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 0.8,
+        "steady_arrival_rate": 0.57,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 32,
+        "time_step": 1,
+        "jobs":{
+          "cartItem_add":{
+            "avg_service_time":"0.0733",
+            "api_call_count":"4"
+          },
+          "order_create":{
+            "avg_service_time":"1.3877",
+            "api_call_count":"1"
+          },
+          "order_getById":{
+            "avg_service_time":"0.3024",
+            "api_call_count":"1"
+          },
+          "order_previewOrder":{
+            "avg_service_time":"0.3646",
+            "api_call_count":"1"
+          },
+          "cart_get":{
+            "avg_service_time":"0.034",
+            "api_call_count":"1"
+          }
+      }
+      }
+    },
+    "gl6": {
+      "account-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 0.7,
+        "steady_arrival_rate": 0.57,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 32,
+        "time_step": 1,
+        "jobs":{
+          "oauth_token":{
+            "avg_service_time":"0.1069",
+            "api_call_count":"1"
+          },
+          "user_getUserInfo":{
+            "avg_service_time":"0.0086",
+            "api_call_count":"1"
+          }
+        }
+      },
+      "billing-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 0.2,
+        "steady_arrival_rate": 0.57,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 32,
+        "time_step": 1,
+        "jobs":{
+          "address_getAddress":{
+            "avg_service_time":"0.0072",
+            "api_call_count":"2"
+          },
+          "address_createAddress":{
+            "avg_service_time":"0.0155",
+            "api_call_count":"1"
+          }
+        }
+      },
+      "catalog-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 1.2,
+        "steady_arrival_rate": 0.47,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 32,
+        "time_step": 1,
+        "jobs":{
+          "product_getAll":{
+            "avg_service_time":"0.0645",
+            "api_call_count":"2"
+          },
+          "image_get":{
+            "avg_service_time":"0.0007",
+            "api_call_count":"7"
+          },
+          "product_get":{
+            "avg_service_time":"0.0412",
+            "api_call_count":"4"
+          },
+          "review_getAllForProduct":{
+            "avg_service_time":"0.0051",
+            "api_call_count":"4"
+          }
+        }
+      },
+      "payment-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 0.1,
+        "steady_arrival_rate": 0.3,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 32,
+        "time_step": 1,
+        "jobs":{
+          "payment_getAll":{
+            "avg_service_time":"0.1687",
+            "api_call_count":"2"
+          },
+          "payment_create":{
+            "avg_service_time":"1.5856",
+            "api_call_count":"1"
+          }
+      }
+      },
+      "order-service": {
+        "duration": 600,
+        "idle_time": 30,
+        "ramp_up_duration": 240,
+        "burst_duration": 30,
+        "burst_arrival_rate": 0.8,
+        "steady_arrival_rate": 0.47,
+        "service_time_range": [0.1, 0.5],
+        "num_cores": 32,
+        "time_step": 1,
+        "jobs":{
+          "cartItem_add":{
+            "avg_service_time":"0.0275",
+            "api_call_count":"4"
+          },
+          "order_create":{
+            "avg_service_time":"1.2508",
+            "api_call_count":"1"
+          },
+          "order_getById":{
+            "avg_service_time":"0.4666",
+            "api_call_count":"1"
+          },
+          "order_previewOrder":{
+            "avg_service_time":"0.3264",
+            "api_call_count":"1"
+          },
+          "cart_get":{
+            "avg_service_time":"0.007",
+            "api_call_count":"1"
+          }
+      }
+      }
+    }
+  }
+  

@@ -1,0 +1,42 @@
+{
+  "account-service": {
+    "port_number":"4001",
+    "jobs": [
+      "oauth_token",
+      "user_getUserInfo"
+    ]
+  },
+  "billing-service": {
+    "port_number":"5001",
+    "jobs": [
+      "address_getAddress",
+      "address_createAddress"
+    ]
+  },
+  "catalog-service": {
+    "port_number":"6001",
+    "jobs": [
+      "product_getAll",
+      "image_get",
+      "product_get",
+      "review_getAllForProduct"
+    ]
+  },
+  "payment-service": {
+    "port_number":"8001",
+    "jobs": [
+      "payment_getAll",
+      "payment_create"
+    ]
+  },
+  "order-service": {
+    "port_number":"7001",
+    "jobs": [
+      "cartItem_add",
+      "order_create",
+      "order_getById",
+      "order_previewOrder",
+      "cart_get"
+    ]
+  }
+}
